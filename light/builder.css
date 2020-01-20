@@ -1,0 +1,82 @@
+/* === modify style sheet === */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+* {padding: 0; margin: 0; font-family: 'Open Sans', sans-serif; box-sizing: border-box;}
+body {position: relative;}
+::-webkit-scrollbar {
+    width: 4px;
+    height: 5px;
+}::-webkit-scrollbar-thumb {
+    background: #A9B1BC;
+    border-radius: 5px;
+}::-webkit-scrollbar-thumb:hover {
+    background: #646C77;
+}
+
+
+/* === TEXT STYLING === */
+h1 {
+    color: #424953;
+    line-height: 50px;
+    padding: 0 15px;
+}section h1 {
+    background: rgba(229, 232, 236, 0.6);
+}
+
+
+/* === HEADER/SECTION STYLING === */
+header {
+    z-index: 10;
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: #E5E8EC;
+}
+section {
+    width: 300px;
+    background: #F4F6F9;
+}
+div.pages, div.components, div.styling {
+    padding: 15px;
+    overflow-y: scroll;
+}
+
+
+/* === LEFT MENU STYLING === */
+section.leftMenu {
+    position: fixed;
+    top: 50px; bottom: 0;   left: 0;
+}
+div.pages {
+    height: calc(100vh / 3.5);
+}
+div.components {
+    height: calc(100vh - (100vh / 3.5) - 150px);
+}
+
+/* h4.CreateComp {
+    background-image: url(icons/);
+    padding-left: 30px;  
+    display: block; 
+} */
+
+/* BUILDER STYLING */
+section.build {
+    position: fixed;
+    transform: translate(calc(50vw - 50%) , calc(50vh - 50% + 25px));
+    height: calc(85vh - 50px);
+    width: calc( (90vh - 50px) * (750/1334) );
+
+    border: 5px solid #F4F6F9;
+    background: #ffffff;
+}
+
+
+/* === RIGHT MENU STYLING === */
+section.rightMenu {
+    position: fixed;
+    top: 50px; bottom: 0;   right: 0;
+}
+
+
+
